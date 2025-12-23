@@ -1,0 +1,15 @@
+<% layout("layouts/boilerplate") -%>
+
+<body>
+    <form     class="needs-validation   col-5 offset-2 mb-5 mt-5" novalidate  action="/users/login" method="POST">
+<h3>Login for the wonderlust</h3>
+          
+        <label class="form-lable"  for="username">Username:</label>
+        <input  class="form-control"  id="username"  type="username"  placeholder="Enter the Username" name="username" required/>
+        <br>
+        <label  class="form-lable" for="password">Password:</label>
+        <input  class="form-control" id="password" type="password" placeholder="Enter the Password" name="password" required/>
+        <br>
+        <button   class="btn btn-success"  type="submit">Login</button>
+    </form>
+</body>

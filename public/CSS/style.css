@@ -1,0 +1,50 @@
+
+body{
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar{
+    height: 80px;
+    background-color: #2978c7;
+    position: sticky;
+    z-index: 100;
+    top:0px;
+}
+.material-symbols-outlined{
+    color: red;
+}
+.nav-link{
+    color: rgb(4, 4, 15) !important;
+    
+}
+.footer{
+    background-color: #c1c7ce;
+    height: 100px;
+    /* position: sticky; */
+    bottom:0px;
+    /* margin-top:20px; */
+}
+
+.footer .links a{
+    color: black;
+    margin:10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.footermaterial{
+    text-align: center;
+}
+.footer .lines {
+    margin-left:150px;
+    margin-right:150px;
+}
+
+.row a{
+text-decoration: none;
+color: black;
+}
+.listingcard{
+    margin-top: 8px;
+    border: none;
+}

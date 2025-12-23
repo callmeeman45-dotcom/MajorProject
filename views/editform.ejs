@@ -1,0 +1,16 @@
+<% layout("layouts/boilerplate") -%>
+<link rel="stylesheet" href="/CSS/style.css">
+<body>
+    <form   class="offset-3"   method="post"  action="/listings/<%= listingdetails._id %>?_method=PUT"   enctype="multipart/form-data">
+        <label class="form-lable" for="title">Title:</label>
+        <input     class="form-control" id="title" type="text" name="title" value="<%= listingdetails.title %>"><br>
+        <textarea  class="form-control"  type="text" placeholder="Description" name="description"><%= listingdetails.description %></textarea><br>
+        <!-- <input type="text"  name="img" value="<%= listingdetails.img %>"> -->
+       <img  style="width: 100px; height: 100px;  filter: blur(1px);"   src="<%=listingdetails.img.url%>" alt="">
+        <input class="form-control"  type="file" name="img" ><br>
+        <input  class="form-control"  type="text" name="price" value="<%= listingdetails.price %>"><br>
+        <input class="form-control"  type="text"  name="Location" value="<%= listingdetails.Location %>"><br>
+        <input  class="form-control" type="text"  name="country" value="<%= listingdetails.country %>"><br>
+        <button type="submit">Update Listing</button>
+    </form>
+</body>

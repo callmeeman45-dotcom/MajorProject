@@ -1,0 +1,23 @@
+<% layout("layouts/boilerplate") -%>
+<style>
+  .tax{
+    display: none;
+  }
+</style>
+
+
+<body>
+    <div  class ="row  row-cols-lg-3">
+<% for(let listing of alllistings){ %>
+<a     href="/listings/<%= listing._id %>" class="card listingcard"  >
+    <img  style="border-radius: 4%;height:300px;width:90%"  src="<%= listing.img.url%>"alt="image">
+    <p style="margin-bottom: 0px;"  >R.S<%=listing.price %> <i  class="tax" > +18 % addition</i></p>
+
+    <bold><p><%= listing.title %></p></bold>
+</a> 
+  <% } %>
+  </div>
+
+
+
+</body>
